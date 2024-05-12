@@ -10,8 +10,12 @@ h2,h3 {
     text-transform: capitalize;
 }
 
+h2 {
+    margin: 100px;
+}
+
 .kep {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: block;
     margin: auto;
@@ -22,6 +26,7 @@ h2,h3 {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    font-size: 90%;
 }
 
 .szog, .oldal  {
