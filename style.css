@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(167deg, rgba(0,0,0,1) 0%, rgb(69, 71, 71) 100%);
+    color: white;
+}
+
+h2,h3 {
+    text-align: center;
+    margin: 30px;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+.kep {
+    width:40%;
+    display: block;
+    margin: auto;
+}
+
+#haromszog {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.szog, .oldal  {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#pontnvonal {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.leiras {
+    color: red;
+}
+
+div.tartalom {
+    margin: 15px;
+    padding: 10px;
+    display: inline-block;
+    width: auto;
+    background-color: rgba(2, 2, 15, 0.481);
+    border: 3px grey solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+    
+}
+
+@media (min-width: 768px) {
+    #haromszog, #pontnvonal {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .szog, .oldal, .tartalom {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    #haromszog, #pontnvonal {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .szog, .oldal, .tartalom {
+        width: 100%;
+    }
+}
