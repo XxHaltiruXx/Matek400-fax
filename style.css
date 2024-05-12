@@ -11,31 +11,22 @@ h2,h3 {
 }
 
 .kep {
-    width:40%;
+    width: 100%;
+    height: auto;
     display: block;
     margin: auto;
 }
 
-#haromszog {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-.szog, .oldal  {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 10px;
-}
-
-#pontnvonal {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 10px;
+#haromszog, #pontnvonal {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
+    text-align: center;
+}
 
+.szog, .oldal  {
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .leiras {
@@ -51,17 +42,14 @@ div.tartalom {
     border: 3px grey solid;
     border-radius: 10px;
     box-shadow: 10px 10px 20px black;
-    
 }
+
 
 @media (min-width: 768px) {
     #haromszog, #pontnvonal {
         display: flex;
         flex-direction: row;
         text-align: center;
-    }
-    .szog, .oldal, .tartalom {
-        width: 50%;
     }
 }
 
@@ -70,8 +58,5 @@ div.tartalom {
         display: flex;
         flex-direction: column;
         text-align: center;
-    }
-    .szog, .oldal, .tartalom {
-        width: 100%;
     }
 }
